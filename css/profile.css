@@ -1,0 +1,339 @@
+#profile {
+  width:100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+#profile > div {
+  margin: 20px;
+}
+
+.picture_text {
+  width:100%;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  overflow-y: hidden;
+
+}
+
+.picture_text > div {
+  height: 100%;
+  border: 1px solid red;
+  margin: 20px;
+  overflow-y: hidden;
+  display: flex;
+}
+
+.picture_text > div:nth-child(1) {
+  width:300px;
+  height:300px;
+  background-color: red;
+  border-radius:100% ;
+}
+
+.picture_text > div:nth-child(2) {
+  width:80%;
+  height:100%;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  
+}
+
+.text > div {
+  margin: 10px;
+}
+
+.text > div:nth-child(1) {
+  width:300px;
+  height:100px;
+  border: 12px rgb(131, 123, 123);
+  border-style: double;
+  border-right: none;
+  border-left: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text > div:nth-child(2) {
+  width:90%;
+  height:150px;
+  border: 1px solid black;
+  padding: 30px;
+}
+
+.skill_info {
+  width:100%;
+  height: 400px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-y: hidden;
+  padding: 20px;
+  background: 
+  linear-gradient(70deg, rgb(43, 42, 42), #0e1825);
+  z-index: -2;
+  
+}
+
+.skill_info > div {
+  width:45%;
+  height: 100%;
+  margin: 10px;
+  background-color:#acaaaa;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  overflow: visible;
+  border-radius: 10px;
+  
+}
+
+.skill {
+  position: relative;
+  background: 
+  linear-gradient(120deg, rgb(119, 119, 119), #0c1624);
+}
+
+.skill_1::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 50%;
+          box-shadow: 0 0 17px 3px #ff0101,0 0 4px 2px #ff0101;
+  z-index: -1;
+          animation-name: yellow-shadow;
+          animation-timing-function: ease;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+  border-radius: 5px;
+}
+
+.skill_1::after {
+  content: '';
+  position: absolute;
+  right: 50;
+  bottom: 50;
+  width: 50%;
+  height: 50%;
+          box-shadow: 0 0 17px 3px rgb(247, 0, 255),0 0 4px 2px rgb(247, 0, 255);
+  z-index: -1;
+          animation-name: cyan-shadow;
+          animation-timing-function: ease;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+  border-radius: 5px;
+}
+
+.skill > div {
+  width:100%;
+  height:50px;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  overflow-y: hidden;
+  margin: 5px;
+  
+
+}
+
+.skill > div > section {
+  width:10px;
+  height:10px;
+  background-color: #FC9B09;
+  border-radius: 100%;
+}
+
+.skill > div > section:nth-child(2) {
+  width:40px;
+  height:40px;
+  background-color: green;
+  margin:0px 10px 0px;
+}
+
+.skill > div > div > p {
+  font-weight: bold;
+  
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background: 
+  linear-gradient(40deg,#0c1624, rgb(119, 119, 119) );
+}
+
+.info > div {
+  width:100%;
+  height:50px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  overflow-y: hidden;
+  margin: 5px;
+}
+
+.info > div > section {
+  width:10px;
+  height:10px;
+  border-radius: 100%;
+  background-color: #FC9B09;
+}
+
+.info > div > p {
+  margin-left: 10px;
+}
+
+.info::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 50%;
+          box-shadow: 0 0 17px 3px #ff0101,0 0 4px 2px #ff0101;
+  z-index: -1;
+          animation-name: yellow-shadow;
+          animation-timing-function: ease;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+  border-radius: 5px;
+}
+
+.info_1::after {
+  content: '';
+  position: absolute;
+  right: 50;
+  bottom: 50;
+  width: 50%;
+  height: 50%;
+          box-shadow: 0 0 17px 3px rgb(247, 0, 255),0 0 4px 2px rgb(247, 0, 255);
+  z-index: -1;
+          animation-name: cyan-shadow;
+          animation-timing-function: ease;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes yellow-shadow {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 50%;
+    left: 0;
+  }
+  50% {
+    top: 100%;
+    left: 100%;
+  }
+  75% {
+    top: 0;
+    left: 50%;
+  }
+  100% {
+    top: 10;
+    left: 10;
+  }
+}
+
+@keyframes yellow-shadow {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 50%;
+    left: 0;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  75% {
+    top: 0;
+    left: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+@-webkit-keyframes cyan-shadow {
+  0% {
+    right: 0;
+    bottom: 0;
+  }
+  25% {
+    right: 0;
+    bottom: 50%;
+  }
+  50% {
+    right: 50%;
+    bottom: 50%;
+  }
+  75% {
+    right: 50%;
+    bottom: 0;
+  }
+  100% {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@keyframes cyan-shadow {
+  0% {
+    right: 0;
+    bottom: 0;
+  }
+  25% {
+    right: 0;
+    bottom: 50%;
+  }
+  50% {
+    right: 50%;
+    bottom: 50%;
+  }
+  75% {
+    right: 50%;
+    bottom: 0;
+  }
+  100% {
+    right: 0;
+    bottom: 0;
+  }
+}

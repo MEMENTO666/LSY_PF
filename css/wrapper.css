@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+#wrapper {
+  width:100%;
+  display: block;
+  flex-direction: column;
+  background: 
+  linear-gradient(70deg, rgb(43, 42, 42), #0e1825);
+}
+
+
