@@ -10,7 +10,8 @@
   display: block;
   flex-direction: column;
   background: 
-  linear-gradient(70deg, rgb(43, 42, 42), #0e1825);
+  linear-gradient(80deg,  #0e1825, rgb(39, 39, 39));
+  font-family: 'Montserrat', sans-serif;
 }
 
 

@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!--** AOS **-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   
   <!-- ** SWIPER ** -->
   <link rel="stylesheet"
@@ -13,6 +21,7 @@
 
   <link rel="stylesheet" href="css/wrapper.css"/>
   <link rel="stylesheet" href="css/intro.css"/>
+  <link rel="stylesheet" href="css/intro.scss"/>
   <link rel="stylesheet" href="css/workplace.css"/>
   <link rel="stylesheet" href="css/profile.css"/>
 
@@ -22,15 +31,7 @@
 
   <div id="wrapper">
     <div id="intro">
-      <div id="intro_text">
-      <p>
-        WEB PUBLISHER
-        <span>
-          LEE SUNG YOON
-        </span>
-         PORTFOLIO
-      </p>
-      </div>
+      <p>LEE SUNG YOON</p>
     </div>
 
     <div id="workplace">
@@ -39,23 +40,26 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <div class="work_image_mb">
+            <div class="work_image_mb work_image_mb_01">
               <div>
                 <img src="./asset/GM_MM_MB.jpg">
              </div>
             </div>
-            <div class="work_image_pc">
+            <div class="work_image_pc work_image_pc_01">
               <div>
             <img src="./Asset/GM_MM_PC.jpg">
               </div>
             </div>
-            <div class="work_detail">
+            <div class="work_detail" data-aos="fade-left">
               <div>
                 <h3>TITLE</h3>
-                <p>MEMENTO</p>
+                <p>GENTLE MONSTER</p>
               </div>
               <div>
                 <h3>TYPE</h3>
+                <p>메인페이지</p>
+                <p>상품 페이지</p>
+                <p>팝업 페이지</p>
                 <p>반응형 웹페이지</p>
               </div>
               <div>
@@ -65,9 +69,9 @@
               <div>
                 <h3>COLOR</h3>
                 <div class="color_box">
-                  <div></div>
-                  <div></div>
-                  <div></div>
+                  <div style="background-color: white;"></div>
+                  <div style="background-color: black;"></div>
+                  <div style="background-color: #969696;"></div>
                 </div>
               </div>
               <div>
@@ -79,8 +83,9 @@
               </div>
               <div>
                 <h3>FONT</h3>
-                <p>한글</p>
-                <p>영어</p>
+                <p>SDGothic</p>
+                <p>Rosha-Keylin</p>
+                <p>Noto Sans</p>
               </div>
               <div>
                 <h3>CONTRIBUTION</h3>
@@ -88,13 +93,22 @@
               </div>
             </div>
           </div>
+
           <div class="swiper-slide">
-            <div class="work_image_mb"></div>
-            <div class="work_image_pc"></div>
-            <div class="work_detail">
+            <div class="work_image_mb work_image_mb_02">
+              <div>
+                <img src="./asset/HB MOB.jpg">
+             </div>
+            </div>
+            <div class="work_image_pc work_image_pc_02">
+              <div>
+            <img src="./Asset/HB FULL.jpg">
+              </div>
+            </div>
+            <div class="work_detail" data-aos="fade-left">
               <div>
                 <h3>TITLE</h3>
-                <p>MEMENTO</p>
+                <p>I AM NOT A HUMAN BEING</p>
               </div>
               <div>
                 <h3>TYPE</h3>
@@ -102,27 +116,26 @@
               </div>
               <div>
                 <h3>DATE</h3>
-                <p>2023.03 ~ 2023.03</p>
+                <p>2022.11 ~ 2022.11</p>
               </div>
               <div>
                 <h3>COLOR</h3>
                 <div class="color_box">
-                  <div></div>
-                  <div></div>
-                  <div></div>
+                  <div style="background-color: white;"></div>
+                  <div style="background-color: black;"></div>
+                  <div style="background-color: #01131e;"></div>
                 </div>
               </div>
               <div>
                 <h3>TOOLS</h3>
                 <p>HTML5</p>
                 <p>CSS5</p>
-                <p>BOOTSTRAP</p>
-                <p>SWIPER</p>
+                <p>JAVASCRIPT</p>
               </div>
               <div>
                 <h3>FONT</h3>
-                <p>한글</p>
-                <p>영어</p>
+                <p>"Lato",sans-serif</p>
+                <p>helvetica</p>
               </div>
               <div>
                 <h3>CONTRIBUTION</h3>
@@ -130,13 +143,22 @@
               </div>
             </div>
           </div>
+
           <div class="swiper-slide">
-            <div class="work_image_mb"></div>
-            <div class="work_image_pc"></div>
-            <div class="work_detail">
+            <div class="work_image_mb work_image_mb_03">
+              <div>
+                <img src="./asset/WantToKnowThat-MB.jpg">
+             </div>
+            </div>
+            <div class="work_image_pc work_image_pc_03">
+              <div>
+            <img src="./Asset/WantToKnowThat-Full.jpg">
+              </div>
+            </div>
+            <div class="work_detail" data-aos="fade-left">
               <div>
                 <h3>TITLE</h3>
-                <p>MEMENTO</p>
+                <p>그것이 알고싶다</p>
               </div>
               <div>
                 <h3>TYPE</h3>
@@ -144,27 +166,25 @@
               </div>
               <div>
                 <h3>DATE</h3>
-                <p>2023.03 ~ 2023.03</p>
+                <p>2022.10 ~ 2022.10</p>
               </div>
               <div>
                 <h3>COLOR</h3>
                 <div class="color_box">
-                  <div></div>
-                  <div></div>
-                  <div></div>
+                  <div style="background-color: #fd9b00;"></div>
+                  <div style="background-color: #15151a;"></div>
+                  <div style="background-color: #212932;"></div>
                 </div>
               </div>
               <div>
                 <h3>TOOLS</h3>
                 <p>HTML5</p>
                 <p>CSS5</p>
-                <p>BOOTSTRAP</p>
-                <p>SWIPER</p>
+                <p>JAVASCRIPT</p>
               </div>
               <div>
                 <h3>FONT</h3>
-                <p>한글</p>
-                <p>영어</p>
+                <p>YDGhothic</p>
               </div>
               <div>
                 <h3>CONTRIBUTION</h3>
@@ -172,6 +192,58 @@
               </div>
             </div>
           </div>
+
+          <div class="swiper-slide">
+            <div class="work_image_mb work_image_mb_04">
+              <div>
+                <img src="./asset/Ghost Of Tsushima-MB.jpg">
+             </div>
+            </div>
+            <div class="work_image_pc work_image_pc_04">
+              <div>
+            <img src="./Asset/Ghost Of Tsushima-Full.jpg">
+              </div>
+            </div>
+            <div class="work_detail" data-aos="fade-left">
+              <div>
+                <h3>TITLE</h3>
+                <p>Ghost Of Tsushima</p>
+              </div>
+              <div>
+                <h3>TYPE</h3>
+                <p>반응형 웹페이지</p>
+              </div>
+              <div>
+                <h3>DATE</h3>
+                <p>2022.10 ~ 2022.10</p>
+              </div>
+              <div>
+                <h3>COLOR</h3>
+                <div class="color_box">
+                  <div style="background-color: #cb3b3e;"></div>
+                  <div style="background-color: #050d11;"></div>
+                </div>
+              </div>
+              <div>
+                <h3>TOOLS</h3>
+                <p>HTML5</p>
+                <p>CSS5</p>
+                <p>JAVASCRIPT</p>
+              </div>
+              <div>
+                <h3>FONT</h3>
+                <p>JSongMyung-Regular-KO</p>
+                <p>Shilla_CultureB-Bold</p>
+                <p>LeferiPoint-BlackObliqueA</p>
+              </div>
+              <div>
+                <h3>CONTRIBUTION</h3>
+                <p>100%</p>
+              </div>
+            </div>
+          </div>
+          
+          
           
 
 
@@ -191,77 +263,90 @@
         <div class="picture">사진</div>
         <div class="text">
           <div>
-            <p>이 성 윤</p>
+            <p>LEE SUNG YOON</p>
           </div>
           <div>
-            <p>열심히 짱짱맨</p>
-            <br>
-            <p>웹퍼블리셔임</p>
+            <section></section><p>윤리의식</p>
+            <section></section><p>협동심</p>
+            <section></section><p>성장지향</p>
+            <section></section><p>성실함</p><section></section>
           </div>
         </div>
       </div>
       <div class="skill_info">
         <div class="skill skill_1">
-          <div>
+          <div data-aos="fade-right">
             <section></section>
-            <section></section>
+            <section>
+              <img src="./asset/html_color.png">
+            </section>
             <div>
               <p>HTML5</p>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-right">
             <section></section>
-            <section></section>
+            <section>
+              <img src="./asset/css_color.png">
+            </section>
             <div>
               <p>CSS3</p>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-right">
             <section></section>
-            <section></section>
+            <section>
+              <img src="./asset/javascript_color2.png">
+            </section>
             <div>
               <p>JAVASCRIPT</p>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-right">
             <section></section>
-            <section></section>
+            <section>
+              <img src="./asset/figma_color.png">
+            </section>
             <div>
               <p>FIGMA</p>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-right">
             <section></section>
-            <section></section>
+            <section>
+              <img src="./asset/PS_color.png">
+            </section>
             <div>
               <p>PHOTOSHOP</p>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-right">
             <section></section>
-            <section></section>
+            <section>
+              <img src="./asset/github_color.png">
+            </section>
             <div>
               <p>GITHUB</p>
             </div>
           </div>
-
         </div>
-        <div class="info info_1">
-          <div>
+      
+        <div class="info info_1" >
+          <div data-aos="fade-left">
             <section></section>
-            <p>Birth : 1989.08.23 ~</p>
+            <p>Birth : <span style="font-weight: 100;">1989.08.23 ~</span></p>
           </div>
-          <div>
+          <div data-aos="fade-left">
             <section></section>
-            <p>Phone : 1989.08.23 ~</p>
+            <p>Phone : <span style="font-weight: 100;">010 6476 0823</span></p>
           </div>
-          <div>
+          <div data-aos="fade-left">
             <section></section>
-            <p>E-mail : 1989.08.23 ~</p>
+            <p>E-mail : <span style="font-weight: 100;">mementomorii666@gmail.com</span></p>
           </div>
-          <div>
+          <div data-aos="fade-left">
             <section></section>
-            <p>Github : 1989.08.23 ~</p>
+            <p>Github : <span style="font-weight: 100;">github.com/MEMENTO666</span></p>
           </div>
         </div>
       </div>
@@ -298,7 +383,7 @@
 
   <!--   ** SWIPER ** -->
   
-    <script type="module">
+  <script type="module">
   import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
 
     
@@ -324,7 +409,17 @@
   // },
 });
     </script>
-  
+
+    <!-- ** AOS ** -->
+
+    <script>
+    AOS.init({
+      easing: 'ease-out-back',
+      duration: 1000,
+    });
+    </script>
+
+
   
   
 </body>

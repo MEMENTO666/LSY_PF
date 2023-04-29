@@ -6,54 +6,9 @@
   justify-content: center;
   color: rgb(245, 245, 245); 
   text-align: center; 
-  margin: 0 
+ 
   };
 
-  #intro_text {
-  border: 1px solid white;
-  }
 
 
-  #intro_text > p {
-  border-width: 4px 0;
-  border: 4px double rgba(0, 195, 255, 0.377);
-  padding: 50px;
-  font-size: 25px;
-  text-shadow: 0px 0px 5px rgb(0, 195, 255);
-  color: rgba(255, 255, 255, 0.425);
-}
-  
-  #intro_text > p > span {
 
-    font: 100px "Oswald", sans-serif;
-    display: block;
-    text-shadow: 0 0 10px rgba(255,255,255,.5);
-
-/* Clip Background Image */
-
-    background: url(../asset/rain.jpg) repeat-y;
-    -webkit-background-clip: text;
-    background-clip: text;
-
-/* Animate Background Image */
-
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: aitf 80s linear infinite;
-    animation: aitf 80s linear infinite;
-
-/* Activate hardware acceleration for smoother animations */
-
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-
-  }
-
-
-/* Animate Background Image */
-
-  @keyframes aitf {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
