@@ -4,9 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ** fonts ** -->
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
   <!--** AOS **-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -17,6 +22,8 @@
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  
 
 
   <link rel="stylesheet" href="css/wrapper.css"/>
@@ -31,7 +38,15 @@
 
   <div id="wrapper">
     <div id="intro">
-      <p>LEE SUNG YOON</p>
+      <div class="background-container">
+        <div id="intro_text">
+          <p>PORTFOLIO</p>
+        </div>
+        <img class="moon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+      </div>
     </div>
 
     <div id="workplace">
@@ -48,6 +63,9 @@
             <div class="work_image_pc work_image_pc_01">
               <div>
             <img src="./Asset/GM_MM_PC.jpg">
+              </div>
+              <div class="siteBox">
+                <a href="https://gentlem.netlify.app" target="_blank"><p>Go Site</p></a>
               </div>
             </div>
             <div class="work_detail" data-aos="fade-left">
@@ -99,10 +117,14 @@
               <div>
                 <img src="./asset/HB MOB.jpg">
              </div>
+             
             </div>
             <div class="work_image_pc work_image_pc_02">
               <div>
             <img src="./Asset/HB FULL.jpg">
+              </div>
+              <div class="siteBox">
+                <a href="https://iamnotahb.netlify.app" target="_blank"><p>Go Site</p></a>
               </div>
             </div>
             <div class="work_detail" data-aos="fade-left">
@@ -154,6 +176,9 @@
               <div>
             <img src="./Asset/WantToKnowThat-Full.jpg">
               </div>
+              <div class="siteBox">
+                <a href="https://wanttoknowthat.netlify.app" target="_blank"><p>Go Site</p></a>
+              </div>
             </div>
             <div class="work_detail" data-aos="fade-left">
               <div>
@@ -202,6 +227,9 @@
             <div class="work_image_pc work_image_pc_04">
               <div>
             <img src="./Asset/Ghost Of Tsushima-Full.jpg">
+              </div>
+              <div class="siteBox">
+                <a href="https://gotfan.netlify.app" target="_blank"><p>Go Site</p></a>
               </div>
             </div>
             <div class="work_detail" data-aos="fade-left">
@@ -296,7 +324,7 @@
           <div data-aos="fade-right">
             <section></section>
             <section>
-              <img src="./asset/javascript_color2.png">
+              <img style=width:30px; src="./asset/javascript_color.png">
             </section>
             <div>
               <p>JAVASCRIPT</p>
@@ -363,20 +391,6 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
   </div>
 
@@ -418,6 +432,9 @@
       duration: 1000,
     });
     </script>
+
+
+<script src="./JS/scroll.js"></script>
 
 
   

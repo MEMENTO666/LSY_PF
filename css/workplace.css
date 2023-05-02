@@ -4,6 +4,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1;
+
 }
 
 .swiper {
@@ -35,7 +38,7 @@
 
 
 .swiper .swiper-pagination-bullet {
-  background-color: rgb(5, 252, 240);
+  background-color: rgb(255, 255, 255);
   width:8px;
   height:15px;
   border-radius: 4px;
@@ -133,11 +136,12 @@
 
 .work_image_pc {
   width:750px;
-  height: 560px;
+  height: 650px;
   /* background-color: rgb(207, 11, 44); */
   position: relative;
   right: 90px;
   background-image: url(../asset/mockup01.png);
+  /* background-image: url(../asset/mockup01_1.png); */
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -148,16 +152,41 @@
 
 .work_image_pc > div {
   width:100%;
-  height: 75%;
-  margin-top: 20px;
+  height: 77%;
+  margin-top: 10px;
   position: absolute;
   cursor: pointer;
   overflow-y: hidden;
-
 }
 
 .work_image_pc > div > img {
   width:100%;
+
+}
+
+.work_image_pc > .siteBox {
+  width:70px;
+  height:40px;
+  background-color: #c5c5c52a;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right:100px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: bold;
+  backdrop-filter: blur(5px);
+  color: white;
+  font-style: italic;
+
+}
+
+.work_image_pc > .siteBox > a {
+  text-decoration: none;
+  color: inherit;
 
 }
 
@@ -211,7 +240,7 @@
   backdrop-filter: blur(3px);
   padding: 10px 0px 10px;
   border-radius: 10px;
-  box-shadow: 2px 2px 7px rgba(5, 252, 239, 0.253);
+  box-shadow: 2px 2px 7px rgba(255, 255, 255, 0.63);
   line-height: 21px;
 }
 
@@ -247,8 +276,8 @@
 
 @media screen and (max-width:1180px) {
   .work_image_pc {
-    width:500px;
-    height: 420px;
+    width:650px;
+    height: 460px;
     transition: 1s;
   }
 
@@ -262,9 +291,14 @@
 @media screen and (max-width:880px) {
   
   .work_image_pc {
-    width:400px;
+    width:370px;
     height: 360px;
 
+  }
+
+  .work_image_pc > .siteBox {
+    margin-right:15px;
+  
   }
 
  
@@ -311,6 +345,14 @@
   .swiper-pagination {
     margin-bottom: 80px;
   }
+
+  .work_image_pc > .siteBox {
+    width:65px;
+    height:22px;
+    font-size: 12px;
+  
+  }
+  
   }
 
   

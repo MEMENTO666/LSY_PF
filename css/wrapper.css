@@ -6,8 +6,8 @@
 }
 
 #wrapper {
+  display: flex;
   width:100%;
-  display: block;
   flex-direction: column;
   background: 
   linear-gradient(80deg,  #0e1825, rgb(39, 39, 39));
