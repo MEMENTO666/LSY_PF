@@ -12,12 +12,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/brush-king" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/hey-august" rel="stylesheet">
+                
 
   <!--** AOS **-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  
   <!-- ** SWIPER ** -->
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
@@ -34,15 +36,20 @@
 
   <title>PORTFOLIO</title>
 </head>
+
+
 <body>
 
   <div id="wrapper">
     <div id="intro">
       <div class="background-container">
         <div id="intro_text">
+          <div id="intro_text_logo">
+            <img src="./asset/image_text.png">
+          </div>
           <p>PORTFOLIO</p>
         </div>
-        <img class="moon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
+        <img id="moon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
         <div class="stars"></div>
         <div class="twinkling"></div>
         <div class="clouds"></div>
@@ -64,7 +71,7 @@
               <div>
             <img src="./Asset/GM_MM_PC.jpg">
               </div>
-              <div class="siteBox">
+              <div class="siteBox" data-aos="flip-up" data-aos-duration="2000">
                 <a href="https://gentlem.netlify.app" target="_blank"><p>Go Site</p></a>
               </div>
             </div>
@@ -123,7 +130,7 @@
               <div>
             <img src="./Asset/HB FULL.jpg">
               </div>
-              <div class="siteBox">
+              <div class="siteBox" data-aos="flip-up" data-aos-duration="2000">
                 <a href="https://iamnotahb.netlify.app" target="_blank"><p>Go Site</p></a>
               </div>
             </div>
@@ -176,7 +183,7 @@
               <div>
             <img src="./Asset/WantToKnowThat-Full.jpg">
               </div>
-              <div class="siteBox">
+              <div class="siteBox" data-aos="flip-up" data-aos-duration="2000">
                 <a href="https://wanttoknowthat.netlify.app" target="_blank"><p>Go Site</p></a>
               </div>
             </div>
@@ -228,7 +235,7 @@
               <div>
             <img src="./Asset/Ghost Of Tsushima-Full.jpg">
               </div>
-              <div class="siteBox">
+              <div class="siteBox" data-aos="flip-up" data-aos-duration="2000">
                 <a href="https://gotfan.netlify.app" target="_blank"><p>Go Site</p></a>
               </div>
             </div>
@@ -288,17 +295,17 @@
 
     <div id="profile">
       <div class="picture_text">
-        <div class="picture">사진</div>
-        <div class="text">
+        <div class="picture" data-aos="flip-right" data-aos-duration="3000">
+          <img src="./asset/profile.img.jpg">
+        </div>
+        <div class="text" data-aos="flip-left" data-aos-duration="1500">
+          <div>
+            <p>WEB PURBLISHER</p>
+          </div>
           <div>
             <p>LEE SUNG YOON</p>
           </div>
-          <div>
-            <section></section><p>윤리의식</p>
-            <section></section><p>협동심</p>
-            <section></section><p>성장지향</p>
-            <section></section><p>성실함</p><section></section>
-          </div>
+          
         </div>
       </div>
       <div class="skill_info">
